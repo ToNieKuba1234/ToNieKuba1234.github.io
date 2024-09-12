@@ -32,6 +32,7 @@
         text-decoration: none;
         color: white;
         padding: 15px 30px;
+        text-align: center;
     }
 
     a:hover {
@@ -67,4 +68,25 @@
     background-color: lightgrey;
     padding: 50px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column;
+
+        .side {
+            width: 100%;
+        }
+
+        .main {
+            width: 100%;
+        }
+    }
+
+    .navbar {
+        flex-direction: column;
+        a {
+            width: 100%;
+        }
+    }
 }
