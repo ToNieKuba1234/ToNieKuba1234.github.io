@@ -1,14 +1,11 @@
 import React from "react";
-import Hero from "./Components/Hero";
-import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+
+import Header from "./Components/Header";
 
 export default function App() {
   return (
-    <div className="bg-[#241468] text-white min-h-screen overflow-x-hidden">
-      <Hero />
-      <Projects />
-      <Contact />
+    <div className="text-white min-h-screen overflow-x-hidden font-inter">
+      <Header />
     </div>
   );
 }
