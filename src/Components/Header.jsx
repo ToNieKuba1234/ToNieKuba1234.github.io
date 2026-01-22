@@ -5,6 +5,8 @@ export default function Header() {
   const [isMobile, setIsMobile] = useState(false);
   const [open, setOpen] = useState(false);
 
+  const [lang, setLang] = useState("PL");
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
 
@@ -15,7 +17,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="w-full border-b border-white/10">
+    <header className="w-full border-b-2 border-white/10">
       <div className="flex items-center justify-between px-6 py-5">
         <a href="">
           <img src={logo} alt="logo" className="h-10 w-auto object-contain" />
@@ -25,19 +27,26 @@ export default function Header() {
           <>
             <nav className="flex gap-6 text-lg text-white/70">
               <a className="transition duration-300 hover:text-white hover:scale-105" href="">
-                Home
+                Główna
               </a>
               <a className="transition duration-300 hover:text-white hover:scale-105" href="">
-                About me
+                O mnie
               </a>
               <a className="transition duration-300 hover:text-white hover:scale-105" href="">
-                Projects
+                Edukacja
+              </a>
+              <a className="transition duration-300 hover:text-white hover:scale-105" href="">
+                Projekty
               </a>
             </nav>
 
-            <button className="px-5 py-2 rounded-full border border-white/20 bg-white/10 hover:bg-white/15 transition">
-              Get Started
+            <button
+              className="px-3 py-3 rounded-full border border-white/20 bg-white/10 hover:bg-slate-50 flex items-center gap-3 min-w-[45px]"
+              onClick={() => setLang(lang === "PL" ? "EN" : "PL")}
+            >
+              <span className="text-sm font-semibold">{lang}</span>
             </button>
+
           </>
         )}
 
