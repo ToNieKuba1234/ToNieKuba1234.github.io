@@ -5,7 +5,6 @@ import rocket from "../assets/hero-rocket.svg";
 export default function LandingPage() {
   return (
     <section className="h-[calc(100vh-88px)] px-8 md:px-16 relative overflow-hidden flex items-center">
-      
       <div className="absolute inset-0 pointer-events-none">
         {Array.from({ length: 60 }).map((_, i) => {
           const size = Math.random() * 8 + 1;
