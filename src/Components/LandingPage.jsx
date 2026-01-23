@@ -43,7 +43,7 @@ export default function LandingPage() {
             <span className="tracking-widest font-bold md:text-4xl text-3xl text-[#F7B500]">
               <Typewriter
                 words={[
-                  "Pasja.",
+                  "Doskonałość.",
                   "Technologia.",
                   "Rozwiązania.",
                   "Innowacja.",

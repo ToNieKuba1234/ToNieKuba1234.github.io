@@ -33,7 +33,7 @@ export default function Header() {
                 O mnie
               </a>
               <a className="transition duration-300 hover:text-white hover:scale-105" href="/">
-                Edukacja
+                Umiejętności
               </a>
               <a className="transition duration-300 hover:text-white hover:scale-105" href="/">
                 Projekty
@@ -83,7 +83,7 @@ export default function Header() {
             O mnie
           </a>
           <a className="text-lg w-full text-center border-t-[1px] p-4 text-white/80 hover:bg-slate-50" href="/" onClick={() => setOpen(false)}>
-            Edukacja
+            Umiejętności
           </a>
           <a className="text-lg w-full text-center border-t-[1px] p-4 text-white/80 hover:bg-slate-50" href="/" onClick={() => setOpen(false)}>
             Projekty
