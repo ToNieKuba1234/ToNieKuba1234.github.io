@@ -45,7 +45,7 @@ export default function About() {
             </div>
         </div>
 
-        <div className="relative py-32 flex flex-col items-center justify-center text-white overflow-hidden">
+        <div className="relative pt-20 pb-10 flex flex-col items-center justify-center text-white overflow-hidden">
             <div className="pointer-events-none absolute inset-0 hidden md:flex items-center justify-center">
                 <div className="w-[300px] h-[300px] rounded-full bg-yellow-400/20 blur-[90px]" />
             </div>
